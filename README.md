@@ -4,15 +4,14 @@
 git clone git@github.com:vlikin/test-hangman.git
 ```
 * Go to the `server/` directory.
+```
+cd test-hangman/server
+```
 * Install node modules.
 ```
 npm i
 ```
-* Run tests.
-```
-npm test
-```
-* If code is changed, run.
+* Compile and run the application, tests.
 ```
 npm compile-test
 ```
