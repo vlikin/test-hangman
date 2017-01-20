@@ -1,3 +1,23 @@
+## How to deploy applicattion
+* Clone the repository.
+```
+git clone git@github.com:vlikin/test-hangman.git
+```
+* Go to the `server/` directory.
+* Install node modules.
+```
+npm i
+```
+* Run tests.
+```
+npm test
+```
+* If code is changed, run.
+```
+npm compile-test
+```
+* Check the logic in the *.ts files.
+
 ## Test task from 3D hubs.
 The challenge is to build a simple HANGMAN game that works as follows:
 * chooses a random word out of 6 words: (3dhubs, marvin, print, filament, order, layer)
