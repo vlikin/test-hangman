@@ -80,10 +80,15 @@ export class GameModel implements IGameModel {
      */
     public static create(): IGameModel {
         let words: string[] = [
-            '3dhubs', 'marvin', 'print', 'filament', 'order', 'layer'
+            'ab', '3dhubs', 'marvin', 'print', 'filament', 'order', 'layer'
         ];
 
-        let word = words[_.random(0, words.length - 1)];
+        let wordIndex = 0;
+        if (process.env['PRODUCTION']) {
+            wordIndex = _.random(0, words.length - 1);
+        }
+
+        let word = words[wordIndex];
         return new GameModel(word);
     }
 

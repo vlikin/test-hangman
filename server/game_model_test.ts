@@ -9,7 +9,7 @@ describe('Game model', function() {
         let game: IGameModel = new GameModel('abz');
         should(game.getWord()).is.equal('abz');
         let word = GameModel.create();
-        should(['3dhubs', 'marvin', 'print', 'filament', 'order', 'layer'])
+        should(['ab', '3dhubs', 'marvin', 'print', 'filament', 'order', 'layer'])
             .containEql(word.getWord());
     });
 
